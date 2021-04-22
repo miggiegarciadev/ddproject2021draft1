@@ -121,6 +121,7 @@ app.get('/blogposting/:id',  (req, res) => {
 //this get route gives functionality to the delete button to work
 
 // READ MORE BUTTON  ===================
+//received help from Maria Christina (Alum)
 app.get('/blogposting/:id',  (req, res) => {
   db.collection('newarticle').findOne({
     _id: ObjectId(req.params.id),
@@ -128,9 +129,10 @@ app.get('/blogposting/:id',  (req, res) => {
     console.log(result)
     console.log(req.params.id)
     if (err) return res.send(500, err)
-    res.redirect('/blogpersonal')
+    res.redirect('/blogposting')
   })
 })
+//this gives the fucntionalitty to read more
 
 
 
