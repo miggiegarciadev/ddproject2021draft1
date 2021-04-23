@@ -14,6 +14,7 @@ Array.from(thumbUp).forEach(function(element) {
             'name': name,
             'msg': msg,
             'thumbUp':thumbUp
+            
           })
         })
         .then(response => {
